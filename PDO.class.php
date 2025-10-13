@@ -449,4 +449,4 @@ class DB
 	}
 }
 
-$DB = new Db(DB_HOST, DB_PORT, DB_NAME, DB_USER, DB_PASS);
+$DB = new DB(DB_HOST, DB_PORT, DB_NAME, DB_USER, DB_PASS);
