@@ -14,6 +14,11 @@
 require(trim($_SERVER['DOCUMENT_ROOT']) . '/inc/class/PDO.Log.class.php');
 require(trim($_SERVER['DOCUMENT_ROOT']) . '/inc/class/PDO.Iterator.class.php');
 
+define("HOST", "localhost");
+define("PORT", "3306");
+define("DB", "authcode");
+define("NAME", "authcode");
+define("PASS", "auth0099!!@@");
 
 /** Class DB
  * @property PDO pdo PDO object
@@ -449,4 +454,4 @@ class DB
 	}
 }
 
-$DB = new DB(DB_HOST, DB_PORT, DB_NAME, DB_USER, DB_PASS);
+$DB = new DB(HOST, PORT, DB, NAME, PASS);
